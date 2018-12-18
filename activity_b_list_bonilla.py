@@ -1,17 +1,56 @@
-list_products = ["Maxx", "Hansel", "Clover", "Safeguard","Zonrox"]
-list_price = [1, 6, 8, 12, 15]
+list_products = ["Maxx", "Clover", "Safeguard", "Hansel", "Chippy"]
+list_price = [1, 8, 15, 7, 40]
 
-for x in range(len(list_products)):
-    print(list_products[0],"-",list_price[0]) 
-    
-for y in range(len(list_products)):
-    print(list_products[1],"-",list_price[1])
+for x in range(5):
+    print((x + 1), ".", list_products[x], "-", list_price[x])
 
-for z in range(len(list_products)):
-    print(list_products[2],"-",list_price[2])
+print()
+select = input("Select: ")
 
-for a in range(len(list_products)):
-    print(list_products[3],"-",list_price[3])
-    
-for b in range(len(list_products)):
-    print(list_products[4],"-",list_price[4])
+if select == "1":
+    quantity = int(input("Quantity: "))
+    total = price[0] * quantity
+    print("Total: ", total)
+    inputMoney = int(input("Enter money: "))
+    if inputMoney >= total:
+        print("Change: ", inputMoney - total)
+    else:
+        print("Not enough money")
+elif select == "2":
+    quantity = int(input("Quantity: "))
+    total = list_price[1] * quantity
+    print("Total: ", total)
+    inputMoney = int(input("Enter money: "))
+    if inputMoney >= total:
+        print("Change: ", inputMoney - total)
+    else:
+        print("Not enough money")
+elif select == "3":
+    quantity = int(input("Quantity: "))
+    total = list_price[2] * quantity
+    print("Total: ", total)
+    inputMoney = int(input("Enter money: "))
+    if inputMoney >= total:
+        print("Change: ", inputMoney - total)
+    else:
+        print("Not enough money")
+elif select == "4":
+    quantity = int(input("Quantity: "))
+    total = list_price[3] * quantity
+    print("Total: ", total)
+    inputMoney = int(input("Enter money: "))
+    if inputMoney >= total:
+        print("Change: ", inputMoney - total)
+    else:
+        print("Not enough money")
+elif select == "5":
+    quantity = int(input("Quantity: "))
+    total = list_price[4] * quantity
+    print("Total: ", total)
+    inputMoney = int(input("Enter money: "))
+    if inputMoney >= total:
+        print("Change: ", inputMoney - total)
+    else:
+        print("Not enough money")
+else:
+    print("Invalid choice")
