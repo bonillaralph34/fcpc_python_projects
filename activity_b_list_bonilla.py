@@ -1,5 +1,5 @@
 list_products = ["Maxx", "Clover", "Safeguard", "Hansel", "Chippy"]
-list_price = [1, 8, 15, 7, 40]
+list_price = [1, 8, 15, 7, 10]
 
 for x in range(5):
     print((x + 1), ".", list_products[x], "-", list_price[x])
